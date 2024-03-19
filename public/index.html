@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/getAverageColor.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/getCurrentlyPlaying.js"></script>
-</head>
-<body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="about" style="display: none">
-        <div class="inline">
-            <img src="https://cdn.discordapp.com/avatars/1014608595263950848/54e05b1aaf97b1c77e16a3b919873c5b.webp?size=128">
-            <h1>Sky</h1>
-        </div>
-        <div id="divider"></div>
-        <div id="buttons">
-            
-        </div>
-        <a id="song">
-            <h2 id="status"></h2>
-            <img id="image" crossorigin="anonymous">
-            <div id="songText">
-                <h1 id="name"></h1>
-                <h2 id="artist"></h2>
-            </div>
-        </a>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="js/getAverageColor.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/getCurrentlyPlaying.js"></script>
+	</head>
+	<body>
+		<div id="loading">
+			<div id="spinner"></div>
+		</div>
+		<div id="content">
+			<div id="about" style="opacity: 0">
+				<div class="inline">
+					<img src="https://cdn.discordapp.com/avatars/1014608595263950848/54e05b1aaf97b1c77e16a3b919873c5b.webp?size=128" />
+					<h1>Sky</h1>
+				</div>
+                <div class="inline">
+					<a href="https://discord.com/users/1014608595263950848"><img src="img/discord.svg" class="logo" /></a>
+					<a href="https://github.com/skysthelimitt"><img src="img/github.svg" class="logo" /></a>
+					<a href="https://www.last.fm/user/skysthelimitdev"><img src="img/lastdotfm.svg" class="logo" /></a>
+					<a href="https://open.spotify.com/user/3165mxl2nkcouzuhuhsknz4dpwme"><img src="img/spotify.svg" class="logo" /></a>
+				</div>
+				<div id="divider"></div>
+				<div id="buttons">
+					<a href="https://selenite.cc"><button class="purple"><span>selenite</span></button></a>
+					<a href="https://selenite.cc"><button class="pink"><img src="img/blog.svg"> <span>blog</span></button></a>
+				</div>
+				<div id="songHolder">
+					<a id="song">
+						<h2 id="status"></h2>
+						<img id="image" crossorigin="anonymous" />
+						<div id="songText">
+							<h1 id="name"></h1>
+							<h2 id="artist"></h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

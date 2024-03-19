@@ -20,6 +20,7 @@ app.get("/api/getLastFM/*", async (req, res) => {
   if(req["url"].includes("currentlyListening")) {
     const listening = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=skysthelimitdev&api_key=${lastfm_api_key}&format=json&limit=1&i=${Math.random * 100000}`);
     listening_data = await listening.json();
+    console.log(listening_data);
     if(JSON.stringify(listening_data["recenttracks"]["track"][0]).includes('{"nowplaying":"true"}')) {
       res.send(`{"song": ${JSON.stringify(listening_data["recenttracks"]["track"][0])}}`);
     } else {
